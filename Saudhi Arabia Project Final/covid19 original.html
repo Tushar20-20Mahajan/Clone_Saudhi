@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+ <head> 
+         <title> REGISTRATION FORM </title>
+		<h1 style="font-size:30px;"> COVID-19 GUIDELINES FORM </h1>
+		<style>
+			body {
+			background-image: url("Covid_19_image_back.jpg");
+			background-size: cover;
+			/* This property makes the image cover the entire background area */
+			background-repeat: no-repeat;
+			/* Prevents the image from repeating */
+			background-position: center center;
+			/* Centers the image on the background */
+			background: blur(1.0);
+		}
+			h1{
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                 text-align: center;
+                 margin: 78px;
+				 border: 4px solid rgb(0, 0, 0);
+				 border-radius: 10px;
+				 color: blanchedalmond;
+				 background-color: rgb(41, 37, 37);
+            }
+h1:hover{
+	background-image: linear-gradient(white,black);
+	cursor: pointer;
+}
+
+h1 {
+    display: block;
+			}
+			form 	{
+				font-size:13;
+				text-align:center;
+			}
+			
+		</style>
+	</style>
+		<style>
+			input {
+				background-color: rgb(41, 37, 37);
+				outline: none;
+				border:4px solid rgb(0, 0, 0);
+				border-radius: 20px;
+				width: 15%;
+				font-size: large;
+			}
+			input::placeholder{
+				background-color: rgb(41, 37, 37);
+				color:blanchedalmond;
+				font-weight: 600;
+				font-weight: bold;
+				text-align: center;
+			
+			}
+			input:hover{
+				background-image: linear-gradient(white,black);
+			}
+			.gender{
+				margin-left: 25%;
+				align-items: center;
+				width: 50%;
+				font-weight: bold;
+				color: blanchedalmond;
+				background-color: rgb(41, 37, 37);
+			}
+			.dose{
+				margin-left: 25%;
+				align-items: center;
+				width: 50%;
+				font-weight: bold;
+				color:  blanchedalmond;
+				background-color: rgb(41, 37, 37);
+				
+				
+			}
+		    .date::placeholder{
+				margin-left: 25%;
+				align-items: center;
+				background-color: rgb(41, 37, 37);
+				color: blanchedalmond;
+			}
+			.ose::placeholder{
+				font-size: smaller;
+			}
+		</style>
+	
+
+</head>
+<body>
+	<audio controls autoplay >
+		<source src="aaaa.mp3" type="audio/MP3">
+	</audio>
+		
+ <form action="backend.php">
+			<input type="text" placeholder="First Name"><br/>
+			<br><input type="text" placeholder="Last Name"><br/>
+			<br><input type="email" name="email1" placeholder="Email Id"><br/>
+			<br><input type="password" name="1name1" placeholder="Password"><br/>
+			<br><input type="number" name="num" placeholder="Mobile Number"><br/><br>
+			<div class="date">
+			<input type="date" name="dob1" placeholder="Date Of Birth"><br/><br>
+			</div>
+			<div class="gender">
+			<label for="gender1"><b> Gender </b> <br/></label>
+			<input type="radio" name='gender' value="male">Male
+			<input type="radio" name='gender' value="female">Female
+			<input type="radio" name='gender' value="other">Other
+			</div>
+			<br/><br><br>
+            <div class="dose">
+			<label for="VACCINE"> <b> VACCINE DOSAGE </b> <br/> <label>
+			</div>
+			<select name='VACCINE'>
+				<option value='select'>select</option>
+				<option value='Single Dossed'>First Dose Done</option>
+				<option value='Double Dossed'>Second Dose Done</option>
+				</select>
+				<br>
+				<br><br><br>
+	
+	<div class="ose">
+		<input type="Covid Certificate " name="vaccinedose1" placeholder="First Dose Certificate">
+	    <input type="COVID Certificate Second " name="vaccinedose2" placeholder="Second Dose Certificate">
+	</div>
+
+	<br><br><br>
+	<div class="hov">
+	<input type="submits" name="Submititnow" placeholder="Submit">
+		 <input type="submits" name="Resetitnow" placeholder="Reset"><br/>
+	</div>
+    
+
+
+</form>
+
+</body>
+</html>

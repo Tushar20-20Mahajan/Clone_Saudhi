@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Add this to ensure content fits within the box */
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        .heading {
+            color: #fff;
+        }
+
+        #para {
+
+            padding: 10px;
+
+            height: 400px;
+            display: flex;
+            color: #fff;
+
+        }
+
+        .first {
+            font-size: 30px;
+            width: 50%;
+            font-family: comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .second {
+            width: 50%;
+            float: center;
+            font-family: comic sans ms;
+            font-size: 1.4rem;
+
+
+
+        }
+
+        .third {
+            float: right;
+            width: 50%;
+            font-size: 1.4rem;
+            font-family: comic sans ms;
+            padding: 5px;
+
+        }
+
+        header {
+            height: 500px;
+            width: 100%;
+            margin-left: 0%;
+            background-image: url("2ndsaudi.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+
+        }
+
+
+
+
+        header li {
+            list-style: none;
+            float: left;
+            margin-top: 50px;
+            padding: 5px;
+            background: transparent;
+
+
+
+
+
+        }
+
+        header ul {
+            border-radius: 10px;
+        }
+
+        header li a {
+
+            margin: auto;
+            text-decoration: none;
+            font-size: 23px;
+            border-radius: 3px;
+            color: black;
+            font-weight: 900;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 5px;
+            border-radius: 5px;
+
+
+
+        }
+
+        li a:hover {
+            background-color: rgb(73, 73, 73);
+            color: white;
+        }
+
+        input {
+            float: right;
+            margin-top: 50px;
+            margin-right: 10px;
+            width: 30%;
+            height: 30px;
+            background: transparent;
+            border-radius: 10px;
+
+        }
+
+        ::placeholder {
+            font-size: 20px;
+            font-family: comic sans ms;
+            color: BLACK;
+        }
+
+        iframe {
+            display: flex;
+        }
+
+        button {
+            background: transparent;
+            text-transform: capitalize;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 194px;
+            height: 33px;
+            font-family: COMIC SANS MS;
+
+        }
+
+        button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        button:hover {
+            color: transparent;
+        }
+
+        .flight {
+            display: flex;
+        }
+
+        .details {
+            list-style: none;
+            display: flex;
+            flex-shrink: var(1.4rem);
+        }
+
+        .details img {
+            width: 50%;
+            padding: 29px;
+
+
+
+        }
+
+
+        .box1 {
+            transition: box-shadow 0.5s;
+            width: 300px;
+            height: 440px;
+            margin: 50px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background: #fff;
+            float: left;
+            padding: 5px;
+            background-image: linear-gradient(white, grey);
+
+
+        }
+
+        .box1 a {
+            width: 60%;
+            margin: 59px;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 13px;
+            padding: 12px;
+
+
+
+        }
+
+        .box1:hover {
+            box-shadow: 10px 10px rgb(107, 109, 107);
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        }
+
+        .box1 a:hover {
+            box-shadow: 10px 10px rgb(107, 109, 107);
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        }
+
+        hr {
+            width: 150px;
+        }
+
+        .box2 {
+            transition: box-shadow 0.5s;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background: #fff;
+            float: left;
+            padding: 5px;
+
+
+
+        }
+
+        .abc {
+            background-image: url("45870.jpg");
+            background-size: cover;
+            color: #fff;
+        }
+
+        .def {
+            background-image: url("622055.jpg");
+            background-size: cover;
+            color: #fff;
+
+
+        }
+
+        .ghi h1 {
+            color: black;
+        }
+
+        .ghi {
+            background-image: url("622061.jpg");
+            color: black;
+            background-size: cover;
+
+        }
+
+        .box2 a {
+            width: 60%;
+            margin: 59px;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 13px;
+            padding: 12px;
+            color: #fff;
+
+
+
+        }
+
+        .box2:hover {
+            box-shadow: 10px 10px rgb(107, 109, 107);
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        }
+
+        .box2 a:hover {
+            box-shadow: 10px 10px rgb(107, 109, 107);
+            transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        }
+
+        hr {
+            width: 150px;
+        }
+
+        footer {
+            background-color: #212139;
+
+
+        }
+
+        .row {
+            display: flex;
+            padding: 45px;
+            margin: -30px;
+
+        }
+
+        .col img {
+            border-radius: 12px;
+        }
+
+        .col {
+            padding: 40px;
+        }
+
+        i {
+            font-size: 25PX;
+            padding: 12px;
+        }
+
+        .col a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .col a i:hover {
+            transform: scale(1.2);
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/fd665e3003.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> welcome to saudi arabia</title>
+</head>
+
+<body>
+    <header>
+        <ul class="ul">
+            <li> <a href="index.html">HOME</a> </li>
+            <li> <a href="#down"> CONTACT US</a></li>
+            <li> <a href="covid19 original.html"> COVID DETAILS </a> </li>
+            <li><a href="saudi calender.html"> SAUDI CALENDAR</a></li>
+        </ul>
+        <button>
+            <a href="site 2.html"> LOGIN or SIGN IN </a>
+        </button>
+        <input type="search" name=" search" id="search" placeholder="type to search ">
+
+
+    </header>
+    <div id="para" class="para">
+        <div class="first">A uniquely Saudi experience awaits in winter</div>
+        <div class="second">
+            Discover an exciting range of activities and Saudi destinations that are perfect for the cooler months of
+            the year. Experience the thrill of Riyadh Seasons, the world's largest lifestyle festival, with a huge
+            variety of entertainment and events for the whole <br>
+            Enjoy the temperate climate of the Red Sea for winter sun, sand and marine adventure. Explore.
+        </div>
+        <div class="third">
+            Saudi's national parks and ward off the evening chill with a roaring campfire beneath the glorious desert
+            stars. Or head for the colder climes of Saudi's mountainous north for a chance to see the desert carpeted in
+            fresh snow. However you like to spend your winter, Saudi has an exciting experience waiting for you.
+        </div>
+    </div>
+    <H1 class="heading">FLIGHT DETAILS</H1>
+    <div class="flight">
+
+        <br>
+        <ul class="details">
+            <li class="box1"> <img src="makemytrip_425_735_425_735.jpg" alt="">
+                <hr>
+                <h1> MAKE MY TRIP </h1>
+                <p> make your way to some of the most iconic cities of saudi arabia with our customised...</p>
+                <hr>
+                <br>
+                <a href="https://www.makemytrip.com/holidays-international/saudi_arabia-vacation-tour-packages.html">
+                    BOOK NOW </a>
+            </li>
+            <li class="box1"> <img src="yatra.jpeg" alt="">
+                <hr>
+                <h1> YATRA </h1>
+                <br>
+                <p> saudi is a land rich in heritage, mystique, and romance.explore the undiscovered.....</p>
+                <hr>
+                <br>
+                <a href="https://www.yatra.com/international-tour-packages/holidays-in-saudi-arabia"> BOOK NOW </a>
+            </li>
+            <li class="box1"> <img src="ease.jpeg" alt="">
+                <hr>
+                <h1> EASEMY <br> TRIP</h1>
+                <p>our saudi arabia vacation packages offers you comfortable stays and so more....</p>
+                <hr>
+                <br>
+                <a href="https://www.easemytrip.com/tourism/saudi/index.html"> BOOK NOW </a>
+            </li>
+
+        </ul>
+    </div>
+    <h1 class="heading"> DESTINATIONS: GLIMPSES</h1>
+    <ul class="details">
+
+        <li class="box2 abc">
+            <hr>
+            <h1> RIYADH </h1>
+            <p> Often refer to as saudi's capital of culture , riyadh showcase the KSA'S beauty and wonder .learn more
+                about riyadh;s history , culture...</p>
+            <hr>
+            <br>
+            <a href="https://www.visitsaudi.com/en/en/see-do/destinations/riyadh"> LEARN MORE </a>
+        </li>
+        <li class="box2 def">
+            <hr>
+            <h1> ALULA </h1>
+            <br>
+            <p> OFERRING A UNIQUE blend of historic and contemporary experiences,alula is a must -stop for people
+                lookimg to immerse themselves in the culture of saud arabia </p>
+            <hr>
+            <br>
+            <a
+                href="https://www.visitsaudi.com/en/see-do/destinations/alula?gclid=EAIaIQobChMIoMDe46aB9QIVzOJ3Ch3prgSDEAAYASAAEgImCPD_BwE&gclsrc=aw.ds">
+                LEARN MORE </a>
+        </li>
+        <li class="box2 ghi">
+            <hr>
+            <h1> DAMMAM</h1>
+            <p>the capitals of saudi arabia's estern province,damman has tranquil use and a busting infrastructure.
+                learn more about the city dammam here</p>
+            <hr>
+            <br>
+            <a
+                href="https://www.visitsaudi.com/en/see-do/destinations/dammam?gclid=EAIaIQobChMInfW7zaaB9QIVBeJ3Ch0MHQxpEAAYASAAEgKVMvD_BwE&gclsrc=aw.ds">
+                LEARN MORE </a>
+        </li>
+
+    </ul>
+    </div>
+    <p> <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14934667.369601134!2d36.02577112620598!3d23.954816136750235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2sin!4v1640259952574!5m2!1sen!2sin"
+            width="1250" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </p>
+    <footer>
+        <div class="row">
+            <div class="col">
+                
+                <img src="Saudhi_logo.png" alt="">
+
+            </div>
+            <div class="col">
+                <h3> CONTACT INFORMATION </h3>
+                <p> <b> Main Location:</b> 50 Main ST Boston MA </p>
+                <p><b>Enrollment Phone :</b>(555) 555-5555 </p>
+                <p><b> Coustomer Care:</b> (333) 333-3333</p>
+                <p><b>Enrollment Email :</b> (555) enroll@visitdubai.com </p>
+                <p><b> Customer Care Email: </b> Customer@visitsaudi.com</p>
+                <p id="down"></p>
+
+            </div>
+            <div class="col">
+
+                <a href="https://www.facebook.com/VisitSaudi"> <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/visitsaudi/"> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCmFRhhc6Gt8b4bSUmTzNIoA"> <i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/visitsaudinow"> <i class="fab fa-twitter"></i></a>
+                <h1> DOWNLOAD OUR APP </h1>
+                <a href="https://play.google.com/store/apps/details?id=sa.gov.apps.sauditourism"> <img src="apple.png"
+                        alt=""></a>
+                <a href="https://apps.apple.com/us/app/visit-saudi/id818179871"> <img src="google.png" alt=""></a>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
